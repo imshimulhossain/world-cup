@@ -1,0 +1,240 @@
+/* ======== Font ======== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ======== Common Styles ======== */
+:root {
+    --primary-color: #dd0000;
+    --second-color: #000000;
+    --secondary-text-color: #3A3A3A;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    vertical-align: middle;
+}
+
+p {
+    font-size: 14px;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.btn {
+    transition: transform 0.3s;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.btn-primary span {
+    margin-left: 10px;
+}
+
+.btn-secondary {
+    background-color: var(--white);
+    color: var(--second-color);
+}
+
+
+/* ========= Hero Area ======== */
+.hero-area {
+    margin-top: 50px;
+}
+
+.hero-area .row {
+    background-color: var(--second-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    border-radius: 20px;
+}
+
+.hero-info,
+.hero-banner {
+    width: 50%;
+}
+
+.hero-info {
+    padding-left: 100px;
+}
+
+.hero-title,
+.hero-description {
+    color: var(--white);
+}
+
+.hero-title {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    margin-bottom: 40px;
+}
+
+.hero-banner {
+    padding-top: 30px;
+    display: flex;
+    padding-right: 100px;
+}
+
+.hero-image {
+    width: 100%;
+}
+
+
+/* ======== Blog Area ======== */
+
+/* -------- Aside Navigation -------- */
+.blog-area .row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navigation {
+    width: 25%;
+    height: fit-content;
+    background-color: var(--second-color);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.aside-menu-btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+/* -------- Blogs -------- */
+
+.blogs {
+    width: 75%;
+}
+
+.article-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.blog {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.blog-image {
+    width: 100%;
+}
+
+.blog-info {
+    padding: 15px;
+}
+
+.blog-topic {
+    border: 1px solid rgba(58, 58, 58, 0.5);
+    border-radius: 5px;
+    display: inline-block;
+    padding: 3px 8px;
+    margin-bottom: 10px;
+}
+
+.blog-title {
+    margin-bottom: 20px;
+}
+
+.blog-interaction {
+    display: flex;
+    gap: 30px;
+}
+
+.blog-interaction p {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.blog-interaction p span {
+    margin-right: 5px;
+}
+
+
+/* ======== Footer Area ======== */
+.footer-area {
+    padding: 100px 0;
+    background-color: var(--second-color);
+    color: var(--white);
+}
+
+.site-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.section-line-break {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    height: 1px;
+    margin-bottom: 30px;
+}
+
+.footer-navigation {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer-menu-item {
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+
+/* ========== End ========== */
