@@ -124,7 +124,8 @@ p {
 /* ======== Blog Area ======== */
 
 /* -------- Aside Navigation -------- */
-.blog-area .row {
+.blog-area .row,
+.match-area .row {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -142,7 +143,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
 }
 
 .aside-menu-btn {
@@ -154,17 +155,20 @@ p {
 
 /* -------- Blogs -------- */
 
-.blogs {
+.blogs,
+.match-cards {
     width: 75%;
 }
 
-.article-grid-container {
+.article-grid-container,
+.card-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-.blog {
+.blog,
+.card {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     overflow: hidden;
@@ -201,6 +205,42 @@ p {
 
 .blog-interaction p span {
     margin-right: 5px;
+}
+
+/* ======== Match Area ========*/
+.card {
+    padding: 30px 20px;
+}
+
+.team-vs-flag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.team-flag {
+    width: 80px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.vs {
+    font-weight: 600;
+}
+
+.match-info {
+    text-align: center;
+}
+
+.team-vs-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.date-time {
+    color: var(--secondary-text-color);
 }
 
 
