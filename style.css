@@ -45,6 +45,7 @@ p {
 }
 
 .container {
+    width: 85%;
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -54,7 +55,6 @@ p {
     border-radius: 5px;
     padding: 10px 30px;
     font-weight: 500;
-    margin-bottom: 20px;
 }
 
 .btn-primary {
@@ -140,9 +140,8 @@ p {
 }
 
 .menu-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     gap: 20px;
 }
 
@@ -205,6 +204,10 @@ p {
 
 .blog-interaction p span {
     margin-right: 5px;
+}
+
+.view-more {
+    display: none;
 }
 
 /* ======== Match Area ========*/
@@ -276,5 +279,194 @@ p {
     font-size: 14px;
 }
 
+
+/* ========= Media Queries ========= */
+
+/* Medium devices (tablets, less than 992px) */
+@media only screen and (max-width: 991.98px) {
+
+    /* ---- common styles ---- */
+    .btn {
+        font-size: 11px;
+        padding: 8px 20px;
+    }
+
+    .btn span {
+        margin-left: 5px;
+    }
+
+    .btn-secondary {
+        border: 0.5px solid rgba(0, 0, 0, 0.1);
+    }
+
+    /* ---- Hero Area ---- */
+    .hero-area {
+        margin-bottom: 60px;
+    }
+
+    .hero-area .row {
+        gap: 10px;
+    }
+
+    .hero-info {
+        padding-left: 50px;
+    }
+
+    .hero-title {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .hero-description {
+        font-size: 11px;
+        margin-bottom: 20px;
+    }
+
+    .hero-banner {
+        padding-top: 20px;
+        padding-right: 15px;
+    }
+
+    /* ---- Blog Area ---- */
+    .blog-area,
+    .match-area {
+        margin-bottom: 60px;
+    }
+
+    .blog-area .row,
+    .match-area .row {
+        flex-direction: column;
+    }
+
+    .navigation {
+        width: 100%;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .menu-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .aside-menu-btn {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border-radius: 10px;
+        font-size: 13px;
+    }
+
+    .blogs,
+    .match-cards {
+        width: 100%;
+    }
+
+    .article-grid-container,
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .view-more {
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-view-more {
+        margin-top: 50px;
+    }
+
+    /* ---- Footer Area ---- */
+    .footer-area {
+        padding: 45px 0;
+    }
+
+    .site-title {
+        margin-bottom: 30px;
+    }
+
+    .footer-navigation {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+
+    /* ---- common styles ---- */
+    .btn {
+        font-size: 18px;
+    }
+
+    .btn span {
+        margin-left: 10px;
+    }
+
+    /* ---- Hero Area ---- */
+    .hero-area {
+        margin-top: 35px;
+    }
+
+    .hero-area .row {
+        flex-direction: column;
+    }
+
+    .hero-info {
+        text-align: center;
+        padding: 30px;
+        padding-top: 40px;
+    }
+
+    .hero-info,
+    .hero-banner {
+        width: 100%;
+    }
+
+    .hero-banner {
+        width: 100%;
+        padding-top: 0;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .hero-title {
+        margin-bottom: 20px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    /* ---- Blog Area ---- */
+    .navigation {
+        margin-bottom: 15px;
+    }
+
+    .menu-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .article-grid-container,
+    .card-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* ---- Match Area ---- */
+    .team-flag {
+        width: 100px;
+    }
+
+    /* ---- Footer Area ---- */
+    .footer-navigation {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-menu-item {
+        text-align: left;
+    }
+}
 
 /* ========== End ========== */
